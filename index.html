@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Feedback -->
+    <div class="overlay-feedback">
+    </div>
+    <div class="feedback">
+        <div class="feedback2">
+            <div id="close-feedback">x</div>
+            <h3>Send your feedback</h3>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <div class="input-feedback">
+                    <input type="hidden" name="access_key" value="ea63b415-3adf-4a30-8f69-700245c79aef">
+                </div>
+
+                <div class="input-feedback">
+                    <label for="nama">Your Name</label>
+                    <br>
+                    <input type="text" placeholder="Full name" required name="nama" class="input">
+                </div>
+                <div class="input-feedback">
+                    <label for="number">Phone</label>
+                    <br>
+                    <input type="number" placeholder="Telp" required name="telpon" class="input">
+                </div>
+                <div class="input-feedback">
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" placeholder="example@gmail.com" required name="email" class="input">
+                </div>
+                <div class="input-feedback">
+                    <label for="textarea">Description</label>
+                    <br>
+                    <textarea name="textarea" cols="30" rows="5"></textarea>
+                </div>
+                <button id="btn-feedback">Send</button>
+        </div>
+    </div>
+    <!-- Menu section isi disini -->
+    <nav class="navbar">
+        <div>
+            <a href="#" class="logo">Team 2 Semarang</a>
+        </div>
+        <div>
+            <div class="menu-mini">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+
+        <ul class="nav-links hidden" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Dashboard/index.html">Dashboard</a></li>
+            <li><a href="Tabel/Data table.html">Tabel</a></li>
+            <li><a href="Recommendation/recommendation.html">Recommendation</a></li>
+            <li id="open-feedback"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--Home section isi disini-->
+    <section id="home">
+        <div class="overlay">
+            <div class="hero">
+                <h1>Team 2 - Semarang</h1>
+                <h2>
+                    RevoU Tech Academy Data Analytics & Software Engineering with AI
+                </h2>
+                <h3>Analisis Penjualan Perusahaan Vending Machine</h3>
+                <a href="Dashboard/index.html" class="btn" id="startnow">Start Now</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!--about section isi disini-->
+    <section id="about">
+        <div class="content1">
+            <img class="animated" src="/Asset/vending.jpg" />
+            <div class="text">
+                <h3 class="animated">Vending Machine</h3>
+                <p class="animated">
+                    Vending machine merupakan suatu alat atau mesin seperti ATM dan
+                    berbentuk seperti kulkas kaca yang berfungsi untuk menjual makanan
+                    atau minuman ringan secara otomatis tanpa adanya kasir atau operator,
+                    sehingga apabila hendak membeli produk yang berada pada vending
+                    machine cukup dengan memasukkan uang koin atau uang kertas kedalam
+                    mesin tanpa ada orang atau operator yang menjual produk dan produk
+                    yang berada di dalam vending machine akan keluar secara otomatis
+                    setelah uang terhitung sesuai harga barang.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Footer-->
+
+    <div class="img-footer">
+    </div>
+    <footer class="footer">
+        <div class="footer-left">
+            <h2>Team 2 Semarang</h2>
+        </div>
+        <div class="footer-center">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Recommendation</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <h2>Contact Us</h2>
+            <div class="contact-icons">
+                <div>
+                    <a href="">
+                        <img src="Asset/email.png" alt="">
+                        <span>team2.tasmgrevou2@gmail.com</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="Asset/phone.png" alt="">
+                        <span>+628123456789</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://github.com/Semarang-2">
+                        <img src="Asset/github.png" alt="">
+                        <div>Github</div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Team 2 Semarang Capstone. All rights reserved
+        </div>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+
+</html>

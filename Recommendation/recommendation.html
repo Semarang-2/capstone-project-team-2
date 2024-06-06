@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Feedback -->
+    <div class="overlay-feedback">
+    </div>
+    <div class="feedback">
+        <div class="feedback2">
+            <div id="close-feedback">x</div>
+            <h3>Send your feedback</h3>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <div class="input-feedback">
+                    <input type="hidden" name="access_key" value="ea63b415-3adf-4a30-8f69-700245c79aef">
+                </div>
+
+                <div class="input-feedback">
+                    <label for="nama">Your Name</label>
+                    <br>
+                    <input type="text" placeholder="Full name" required name="nama" class="input">
+                </div>
+                <div class="input-feedback">
+                    <label for="number">Phone</label>
+                    <br>
+                    <input type="number" placeholder="Telp" required name="telpon" class="input">
+                </div>
+                <div class="input-feedback">
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" placeholder="example@gmail.com" required name="email" class="input">
+                </div>
+                <div class="input-feedback">
+                    <label for="textarea">Description</label>
+                    <br>
+                    <textarea name="textarea" cols="30" rows="5"></textarea>
+                </div>
+                <button id="btn-feedback">Send</button>
+        </div>
+    </div>
+    <!-- Menu section isi disini -->
+    <nav class="navbar">
+        <div>
+            <a href="#" class="logo">Recommendation</a>
+        </div>
+        <div>
+            <div class="menu-mini">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+
+        <ul class="nav-links hidden" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Dashboard/index.html">Dashboard</a></li>
+            <li><a href="../Tabel/Data table.html">Tabel</a></li>
+            <li><a href="recommendation.html">Recommendation</a></li>
+            <li id="open-feedback"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--  -->
+    <!-- <div class="scale">
+        <p> sebaiknya tambahkan jumlah produk yang dijual di vending machine yang berlokasi di GuttenPlans serta
+            mengutamakan kualitas pelayanan dan kualitas mesin disana
+        </p>
+        <p>
+            sebaiknya ditingkatkan kualitas dan kuantitas produk pada kuartal ke-3 yaitu pada bulan Juli sampai dengan
+            bulan September karena pada kuartal tersebut merupakan kuartal dengan jumlah penjualan tertinggi
+        </p>
+        <p>
+            mayoritas pelanggan memilih untuk menggunakan uang tunai, sebaiknya tingkatkan kualitas pelayanan pelanggan
+            yang memilih metode transaksi menggunakan uang tunai untuk menarik minat pelanggan untuk terus membeli di
+            vending machine tersebut. Selain itu juga meningkatkan minat para pelanggan untuk menggunakan kredit dengan
+            memberikan promo tertentu
+        </p>
+        <p>
+            Monster Energy Original, perusahaan dapat menambah stok dari produk tersebut dengan tujuan meningkatkan
+            keuntungan
+        </p>
+        <p>
+            Coca Cola Zero Sugar, perusahaan dapat menaikkan harga produk untuk meningkatkan keuntungan dan dilakukan
+            analisis lebih lanjut apakah dengan menaikkan harga memberikan pengaruh besar terhadap minat pelanggan
+        </p>
+    </div> -->
+    <!-- Recommendtation -->
+    <section class="recommended-section">
+        <div class="recommended-judul">
+            <h2>Recommendation dari analisis yg dilakukan</h2>
+        </div>
+        <div class="recommended-content">
+            <div class="list-img">
+                <img src="../Asset/vending 1.png" alt="">
+            </div>
+            <div class="list">
+                <ul>
+                    <li>
+                        <div class="recommended-list">
+                            <img src="../Asset/arrow-bot.png" alt="" class="btn-recommended">
+                            <p class="saran">Berdasarkan lokasi dengan tingkat penjualan tertinggi</p>
+                        </div>
+                        <p class="jawaban">sebaiknya tambahkan jumlah produk yang dijual di vending machine yang
+                            berlokasi di
+                            GuttenPlans serta
+                            mengutamakan kualitas pelayanan dan kualitas mesin disana</p>
+                        </p>
+                    </li>
+                    <li>
+                        <div class="recommended-list">
+                            <img src="../Asset/arrow-bot.png" alt="" class="btn-recommended">
+                            <p class="saran">Berdasarkan tingkat penjualan pada setiap kuartal di tahun 2022</p>
+                        </div>
+                        <p class="jawaban">sebaiknya ditingkatkan kualitas dan kuantitas produk pada kuartal ke-3 yaitu
+                            pada bulan Juli sampai dengan bulan September karena pada kuartal tersebut merupakan kuartal
+                            dengan jumlah penjualan tertinggi</p>
+                    </li>
+                    <li>
+                        <div class="recommended-list">
+                            <img src="../Asset/arrow-bot.png" alt="" class="btn-recommended">
+                            <p class="saran">Berdasarkan metode transaksi</p>
+                        </div>
+                        <p class="jawaban">mayoritas pelanggan memilih untuk menggunakan uang tunai, sebaiknya
+                            tingkatkan kualitas pelayanan pelanggan yang memilih metode transaksi menggunakan uang tunai
+                            untuk menarik minat pelanggan untuk terus membeli di vending machine tersebut. Selain itu
+                            juga meningkatkan minat para pelanggan untuk menggunakan kredit dengan memberikan promo
+                            tertentu</p>
+                    </li>
+                    <li>
+                        <div class="recommended-list">
+                            <img src="../Asset/arrow-bot.png" alt="" class="btn-recommended">
+                            <p class="saran">Berdasarkan jenis produk yang memberikan keuntungan tertinggi</p>
+                        </div>
+                        <p class="jawaban">Monster Energy Original, perusahaan dapat menambah stok dari produk tersebut
+                            dengan tujuan meningkatkan keuntungan</p>
+                    </li>
+                    <li>
+                        <div class="recommended-list">
+                            <img src="../Asset/arrow-bot.png" alt="" class="btn-recommended">
+                            <p class="saran">Berdasarkan jenis produk yang paling diminati pelanggan</p>
+                        </div>
+                        <p class="jawaban">Coca Cola Zero Sugar, perusahaan dapat menaikkan harga produk untuk
+                            meningkatkan keuntungan dan dilakukan analisis lebih lanjut apakah dengan menaikkan harga
+                            memberikan pengaruh besar terhadap minat pelanggan</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--Footer-->
+
+    <div class="img-footer">
+    </div>
+    <footer class="footer">
+        <div class="footer-left">
+            <h2>Team 2 Semarang</h2>
+        </div>
+        <div class="footer-center">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Recommendation</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <h2>Contact Us</h2>
+            <div class="contact-icons">
+                <div>
+                    <a href="">
+                        <img src="../Asset/email.png" alt="">
+                        <span>team2.tasmgrevou2@gmail.com</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="../Asset/phone.png" alt="">
+                        <span>+628123456789</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://github.com/Semarang-2">
+                        <img src="../Asset/github.png" alt="">
+                        <div>Github</div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Team 2 Semarang Capstone. All rights reserved
+        </div>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+
+</html>
