@@ -11,7 +11,7 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 10px 20px;
-  background: #191919; 
+  background: rgb(17, 70, 70); 
   color: #fff; 
   margin: 0;
 }
@@ -80,8 +80,8 @@ body {
 
 .hero {
 text-align: center;
-background-image: url(/Asset/Bg1.svg);
-height: 257px;
+background-image: url(./Asset/Bg1.svg);
+height: 250px;
 position: flex;
 display: block;
 align-items: center;
@@ -121,13 +121,13 @@ margin-bottom: 100px;
 }
 .btn {
 display: inline-block;
-background-color: black;
+background-color: rgb(27, 105, 105);
 color: white;
 padding: 10px 20px;
 text-decoration: none;
 border-radius: 15px;
 margin-top: 20px;
-
+font-weight: bold;
 }
 
 /* Hover effect di menu */
@@ -154,7 +154,7 @@ color: yellow;
 
 #about .content1 {
   display: flex; /* flexbox */
-  align-items: center; 
+  align-items: inherit; 
   
 }
 
@@ -167,6 +167,7 @@ color: yellow;
 #about .content1 .text {
   display: flex;
   flex-direction: column; 
+  text-align: justify;
   width: 600px;
   
 }
@@ -176,8 +177,8 @@ color: yellow;
 /* animasi buat js section about */
 .animated {
   opacity: 0; /*  dari  transparan */
-  transition: opacity 1s ease; /* Animasi opacity */
-  transition-delay: 0.5s; /* Tunda animasi */
+  transition: opacity 0.5s ease; /* Animasi opacity */
+  transition-delay: 0s; /* Tunda animasi */
 }
 
 .animated.show {
@@ -188,7 +189,7 @@ color: yellow;
 
 /* Section Footer Start */
 .footer{
-  background-color: #1f1f1f;
+  background-color: rgb(17, 70, 70);
   color: #f1f1f1;
   display: grid;
   justify-content: center;
@@ -293,11 +294,11 @@ color: yellow;
   background-color: #DDDDDD;
   height: auto;
   z-index: 1;
-  color: #191919;
+  color: rgb(17, 70, 70);
 }
 .feedback2{
   position: fixed;
-  background-color: #1f1f1f;
+  background-color: rgb(17, 70, 70);
   right: 0;
   height: 90%;
   top: 20px;
@@ -311,7 +312,7 @@ right: 10px;
 text-align: end;
 width: 40px;
 height: 40px;
-color: #191919;
+color: rgb(17, 70, 70);
 font-size: 36px;
 font-weight: bold;
 text-align: center;
@@ -391,7 +392,7 @@ margin: 0;
 
   /* Media Query Footer */
   .footer{
-    background-color: #1f1f1f;
+    background-color: rgb(17, 70, 70);
     color: #f1f1f1;
     display: grid;
     justify-content: center;

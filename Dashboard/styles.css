@@ -24,8 +24,9 @@ body {
 .button button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #007bff;
+  background-color: rgb(27, 105, 105);
   color: white;
+  font-weight: bold;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -33,15 +34,20 @@ body {
 }
 
 .button button:hover {
-  background-color: #0056b3;
+  background-color: rgb(4, 63, 63);
 }
 
 .dashboard {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 50px;
+  justify-content: space-evenly;
+  justify-items: center;   
+}
+
+.card:last-child{
+  grid-column: span 2;
 }
 
 .card {
@@ -49,13 +55,14 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   overflow: hidden;
-  width: 400px;
+  width: 500px;
   margin: 20px;
 }
 
 .card-header {
-  background-color: #007bff;
+  background-color: rgb(27, 105, 105);
   color: white;
+  font-weight: bold;
   padding: 10px;
   font-size: 18px;
   text-align: center;
@@ -72,7 +79,7 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 10px 20px;
-  background: #191919; 
+  background: rgb(17, 70, 70); 
   color: #fff; 
   margin: 0;
 }
@@ -142,7 +149,7 @@ body {
 
 /* Section Footer Start */
 .footer{
-  background-color: #1f1f1f;
+  background-color: rgb(17, 70, 70);
   color: #f1f1f1;
   display: grid;
   justify-content: center;
@@ -249,11 +256,11 @@ body {
   background-color: #DDDDDD;
   height: auto;
   z-index: 1;
-  color: #191919;
+  color: rgb(17, 70, 70);
 }
 .feedback2{
   position: fixed;
-  background-color: #1f1f1f;
+  background-color: rgb(17, 70, 70);
   right: 0;
   height: 90%;
   top: 20px;
@@ -267,7 +274,7 @@ right: 10px;
 text-align: end;
 width: 40px;
 height: 40px;
-color: #191919;
+color: rgb(17, 70, 70);
 font-size: 36px;
 font-weight: bold;
 text-align: center;
@@ -347,7 +354,7 @@ margin: 0;
 
   /* Media Query Footer */
   .footer{
-    background-color: #1f1f1f;
+    background-color: rgb(17, 70, 70);
     color: #f1f1f1;
     display: grid;
     justify-content: center;
@@ -358,5 +365,9 @@ margin: 0;
                           "right"
                           "bottom";
     gap: 10px;
+  }
+
+  .card:last-child{
+    grid-column: span 1;
   }
 }

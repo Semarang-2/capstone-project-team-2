@@ -9,6 +9,7 @@ menuMini.addEventListener('click', function(){
     menuList.classList.toggle('hidden');
 });
 
+// Function feedback
 const clsFeedback = document.getElementById('close-feedback');
 const feedback = document.querySelector('.feedback');
 const overlayFeedback = document.querySelector('.overlay-feedback');
@@ -24,6 +25,8 @@ opnFeedback.addEventListener('click', function(){
     overlayFeedback.style.display = 'block';
 });
 
+
+// Data tables
 $(document).ready(function () {
     $('#myTable').DataTable({
         'ajax': './Data-table.json',

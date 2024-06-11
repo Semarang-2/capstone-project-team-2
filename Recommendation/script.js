@@ -38,27 +38,3 @@ const btnRecommended = document.querySelectorAll('.btn-recommended');
         });
     });
 
-// // 
-// const scale = document.querySelectorAll('.jawaban');
-// const minimize = document.querySelectorAll('.saran')
-// const btnRecommended = document.querySelectorAll('.btn-recommended');
-
-// btnRecommended.forEach(function (e, index) {
-//     e.addEventListener('click', function () {
-//         // Menyembunyikan elemen minimize dengan indeks yang sesuai
-//         if (e) {  // Mengecek apakah elemen dengan indeks yang sesuai ada
-//               // Menyembunyikan elemen minimize dengan indeks yang sama
-//             scale[index].style.display = 'block';
-//             if(e){
-//             minimize[index].style.display = 'block';  // Menyembunyikan elemen minimize dengan indeks yang sama
-                
-//             }
-//         }
-//         // else (scale[index]) {  // Mengecek apakah elemen dengan indeks yang sesuai ada
-//         //     minimize[index].style.display = 'block';  // Menyembunyikan elemen minimize dengan indeks yang sama
-//         //     scale[index].style.display = 'none';
-//         // }
-
-//         // Menampilkan elemen DOM scale yang sesuai
-//     });
-// });
